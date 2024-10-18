@@ -1,3 +1,6 @@
+import * as dotenv from "dotenv";
+dotenv.config(); // 
+
 import * as dotenvenc from "@chainlink/env-enc"
 dotenvenc.config();
 
