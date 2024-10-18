@@ -2,4 +2,4 @@
 
 Course: https://andrej-rakic.gitbook.io/chainlink-ccip
 
-Video: 
+Video: https://www.youtube.com/watch?v=4g_zHEeZPpM
