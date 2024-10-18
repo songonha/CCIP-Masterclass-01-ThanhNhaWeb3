@@ -1,12 +1,12 @@
 # CCIP TIC TAC TOE
 
-## CONTRACT ON FUJI: 
+## CONTRACT ON FUJI: 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87
 
 Command: npx hardhat run ./scripts/deployTicTacToe.ts --network avalancheFuji
 
 ✅ Tic Tac Toe Demo deployed at address 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 on avalancheFuji blockchain
 
-
+https://testnet.snowtrace.io/address/0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87
 
 Router FUJI: 0xF694E193200268f9a4868e4Aa017A0118C9a8177
 
@@ -23,13 +23,13 @@ Router Amoy: 0x9C32fCB86BF0f4a1A8921a9Fe46de3198bb884B2
 Chain selector Amoy: 16281711391670634445
 
 
-## CONTRACT ON SEPOLIA: 
+## CONTRACT ON SEPOLIA: 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
 
 Command: npx hardhat run ./scripts/deployTicTacToe.ts --network ethereumSepolia
 
 ✅ Tic Tac Toe Demo deployed at address 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 on ethereumSepolia blockchain
 
-
+https://sepolia.etherscan.io/address/0xda63d08a3c32438d7ba2d762be124b32b821fcd1
 
 Router Sepolia: 0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59
 
@@ -53,7 +53,7 @@ npx hardhat ttt-update-router --blockchain polygonAmoy --contract 0x1C929B974B48
 
 ON SEPOLIA: 0.1 ETH
 
-ON FUJI: 2 AVAX
+ON FUJI: 2.5 AVAX
 
 ### START GAME BETWEEN SEPOLIA AND FUJI:
 
@@ -61,12 +61,11 @@ npx hardhat ttt-start --source-blockchain ethereumSepolia --sender 0xDA63d08a3c3
 
 ✅ Message sent, game session created! transaction hash: 0xaed281b5c52b2c15dc66e81af3ee38d1216f4a95e6a3aef9effddbefd510a682
 
+https://ccip.chain.link/#/side-drawer/msg/0x8159f0d476758fcfadf469bdd04c5236cc26cc97bb1b55813b095b9375ad0e5e
+
 ### START GAME BETWEEN FUJI AND SEPOLIA:
 
 npx hardhat ttt-start --source-blockchain avalancheFuji --sender 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --destination-blockchain ethereumSepolia --receiver 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
-
-
-
 
 ### Get session ID:
 
@@ -79,13 +78,10 @@ sessionId at index 0 is: 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b
 npx hardhat ttt-get-sessionId --blockchain avalancheFuji --contract 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --index 0
 
 
-
 ### Player 2 makes a move in Blockchain 2
 
 #### Move 2: 
 npx hardhat ttt-move --x 0 --y 1 --player 2 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain avalancheFuji --sender 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --destination-blockchain ethereumSepolia --receiver 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
-
-
 
 #### Move 4:
 npx hardhat ttt-move --x 1 --y 2 --player 2 --session-id 0xbb9ae76f71906dbfbdddc3f3ad5fd0f456def88953723700d04ab4d19bc7f718 --source-blockchain avalancheFuji --sender 0x1a8110B7252d65E2C367e0B2285BE88DAe502486 --destination-blockchain ethereumSepolia --receiver 0x4726E37410e20C86a4DA66FdF53f419BBF4E64fE
@@ -103,6 +99,8 @@ npx hardhat ttt-move --x 0 --y 0 --player 1 --session-id 0xef5ae8233001b16f3aef7
 
 ✅ Message sent, you make a move! transaction hash: 0xf467b0ad69cde1dba714e0629b490c8bb21f2099416d1b11ad2a9773856747bd
 
+https://ccip.chain.link/#/side-drawer/msg/0x89530fb737ea08c723f2ef0dbfd9c28d8f350bd7c34aecc13c0d1dca23adb163
+
 #### Move 3: 
 npx hardhat ttt-move --x 1 --y 1 --player 1 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain ethereumSepolia --sender 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --destination-blockchain avalancheFuji --receiver 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87
 
@@ -119,7 +117,7 @@ npx hardhat ttt-move --x 2 --y 0 --player 1 --session-id 0xbb9ae76f71906dbfbdddc
 
 npx hardhat ttt-check-winner --blockchain ethereumSepolia --contract 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 
 
-winner of sessionId 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 is: 0x0000000000000000000000000000000000000000
+#### winner of sessionId 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 is: 0x0000000000000000000000000000000000000000
 
 npx hardhat ttt-check-winner --blockchain avalancheFuji --contract 0x1a8110B7252d65E2C367e0B2285BE88DAe502486 --session-id 0xbb9ae76f71906dbfbdddc3f3ad5fd0f456def88953723700d04ab4d19bc7f718
 
