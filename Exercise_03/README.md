@@ -12,6 +12,14 @@ Router FUJI: 0xF694E193200268f9a4868e4Aa017A0118C9a8177
 
 Chain selector Fuji: 14767482510784806043
 
+## CONTRACT ON AMOY: 
+
+Command: npx hardhat run ./scripts/deployTicTacToe.ts --network polygonAmoy
+
+Router Amoy: 0x9C32fCB86BF0f4a1A8921a9Fe46de3198bb884B2
+
+Chain selector Amoy: 16281711391670634445
+
 
 ## CONTRACT ON SEPOLIA: 
 
