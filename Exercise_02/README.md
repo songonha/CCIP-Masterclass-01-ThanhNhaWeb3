@@ -1,6 +1,6 @@
 ## CCIP 1 - EXERCISE 2: SEND DATA FROM FUJI TO ETHEREUM SEPOLIA
 
-### SENDER CONTRACT (FUJI): 
+### SENDER CONTRACT (FUJI): 0x7e2ee414010Ee748002D77D0A8fdfD9EF510a0D9
 
 
 
@@ -22,7 +22,7 @@
 
 #### Price: 100
 
-3/ whitelistSender (sender contract): 
+3/ whitelistSender (sender contract): 0x7e2ee414010Ee748002D77D0A8fdfD9EF510a0D9
 
 4/ whitelistSourceChain (FUJI): 14767482510784806043
 
@@ -32,7 +32,7 @@
 
 destinationChainSelector (SEPOLIA): 16015286601757825753
 
-receiver (contract): 
+receiver (contract): 0xb451a315eCa31cD22Dbdea9314A01c8280137381
 
 token (CCIP_BnM): 0xD21341536c5cF5EB1bcb58f6723cE26e8D8E90e4
 
