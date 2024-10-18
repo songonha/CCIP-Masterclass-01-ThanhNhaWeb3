@@ -40,12 +40,11 @@ amount: 100
 
 Transaction:
 
-
-
+https://ccip.chain.link/#/side-drawer/msg/0x4737450a1525569fb44e8c619e68eda6096523451b94a968aae1d9a8cb637c08
 
 NFT: 
 
-
+https://testnets.opensea.io/assets/sepolia/0xa198a2e5bea384049ca6f60e14f48fd1319d486f/0
 
 
 
