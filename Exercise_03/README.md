@@ -16,6 +16,8 @@ Chain selector Fuji: 14767482510784806043
 
 Command: npx hardhat run ./scripts/deployTicTacToe.ts --network polygonAmoy
 
+✅ Tic Tac Toe Demo deployed at address 0x1C929B974B48204DB9A385670F3029A4717D4e7A on polygonAmoy blockchain
+
 Router Amoy: 0x9C32fCB86BF0f4a1A8921a9Fe46de3198bb884B2
 
 Chain selector Amoy: 16281711391670634445
@@ -42,6 +44,10 @@ npx hardhat ttt-update-router --blockchain ethereumSepolia --contract 0xDA63d08a
 npx hardhat ttt-update-router --blockchain avalancheFuji --contract 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --router 0xF694E193200268f9a4868e4Aa017A0118C9a8177
 
 ✅ Update successful, transaction hash: 0xd2e8fe94df509adbcdae95ca57ebbe0bd03be912dd96cb20d81d7952d555b94a
+
+npx hardhat ttt-update-router --blockchain polygonAmoy --contract 0x1C929B974B48204DB9A385670F3029A4717D4e7A --router 0x9C32fCB86BF0f4a1A8921a9Fe46de3198bb884B2
+
+
 
 ### DEPOSITE NATIVE TOKEN TO SMART CONTRACT
 
