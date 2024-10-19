@@ -149,7 +149,7 @@ https://ccip.chain.link/#/side-drawer/msg/0xf1bc59965f9ea8508876b8f3f9193587a6ec
 
 npx hardhat ttt-check-winner --blockchain ethereumSepolia --contract 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 
 
-#### winner of sessionId 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 is: 0x0000000000000000000000000000000000000000
+#### winner of sessionId 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 is: 0x1e74DC196C1372C3535d070574e9509513b7DF85
 
 npx hardhat ttt-check-winner --blockchain avalancheFuji --contract 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69
 
