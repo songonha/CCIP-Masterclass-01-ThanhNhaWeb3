@@ -35,7 +35,7 @@ Router Sepolia: 0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59
 
 Chain selector Sepolia: 16015286601757825753
 
-### ROUTER UPDATE:
+## ROUTER UPDATE:
 
 npx hardhat ttt-update-router --blockchain ethereumSepolia --contract 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --router 0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59
 
@@ -49,7 +49,7 @@ npx hardhat ttt-update-router --blockchain polygonAmoy --contract 0x1C929B974B48
 
 
 
-### DEPOSITE NATIVE TOKEN TO SMART CONTRACT
+## DEPOSITE NATIVE TOKEN TO SMART CONTRACT
 
 ON SEPOLIA: 0.1 ETH
 
@@ -66,6 +66,11 @@ https://ccip.chain.link/#/side-drawer/msg/0x8159f0d476758fcfadf469bdd04c5236cc26
 ### START GAME BETWEEN FUJI AND SEPOLIA:
 
 npx hardhat ttt-start --source-blockchain avalancheFuji --sender 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --destination-blockchain ethereumSepolia --receiver 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
+
+#### NEXT NEW GAME
+
+
+
 
 ### Get session ID:
 
