@@ -63,15 +63,6 @@ npx hardhat ttt-start --source-blockchain ethereumSepolia --sender 0xDA63d08a3c3
 
 https://ccip.chain.link/#/side-drawer/msg/0x8159f0d476758fcfadf469bdd04c5236cc26cc97bb1b55813b095b9375ad0e5e
 
-### START GAME BETWEEN FUJI AND SEPOLIA:
-
-npx hardhat ttt-start --source-blockchain avalancheFuji --sender 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --destination-blockchain ethereumSepolia --receiver 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
-
-#### NEXT NEW GAME
-
-
-
-
 ### Get session ID:
 
 npx hardhat ttt-get-sessionId --blockchain ethereumSepolia --contract 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --index 0
@@ -81,6 +72,16 @@ npx hardhat ttt-get-sessionId --blockchain ethereumSepolia --contract 0xDA63d08a
 npx hardhat ttt-get-sessionId --blockchain avalancheFuji --contract 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --index 0
 
 ✅ sessionId at index 0 is: 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69
+
+## NEXT NEW GAME (TEST FOR THE NEW ROUND)
+
+### START GAME BETWEEN FUJI AND SEPOLIA:
+
+npx hardhat ttt-start --source-blockchain avalancheFuji --sender 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --destination-blockchain ethereumSepolia --receiver 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
+
+✅ Message sent, game session created! transaction hash: 0x3b7c8b813436013a1a7207c9ac611823b1a3e14a97593db9a077ad5bfbd4648e
+
+https://ccip.chain.link/#/side-drawer/msg/0x5b327dbf28f7f643a40654496a9e2c4e52b5ab5ccb070458713b600040e1ae0f
 
 ## PLAYER MAP
 
