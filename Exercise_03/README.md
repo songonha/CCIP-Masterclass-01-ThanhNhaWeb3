@@ -1,6 +1,6 @@
 # EXERCISE 03: CCIP TIC TAC TOE
 
-## CONTRACT ON FUJI: 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87
+## A. CONTRACT ON FUJI: 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87
 
 Command: npx hardhat run ./scripts/deployTicTacToe.ts --network avalancheFuji
 
@@ -12,7 +12,7 @@ Router FUJI: 0xF694E193200268f9a4868e4Aa017A0118C9a8177
 
 Chain selector Fuji: 14767482510784806043
 
-## CONTRACT ON AMOY: 
+## B. CONTRACT ON AMOY: 
 
 Command: npx hardhat run ./scripts/deployTicTacToe.ts --network polygonAmoy
 
@@ -23,7 +23,7 @@ Router Amoy: 0x9C32fCB86BF0f4a1A8921a9Fe46de3198bb884B2
 Chain selector Amoy: 16281711391670634445
 
 
-## CONTRACT ON SEPOLIA: 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
+## C. CONTRACT ON SEPOLIA: 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
 
 Command: npx hardhat run ./scripts/deployTicTacToe.ts --network ethereumSepolia
 
@@ -35,7 +35,7 @@ Router Sepolia: 0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59
 
 Chain selector Sepolia: 16015286601757825753
 
-## ROUTER UPDATE:
+## D. ROUTER UPDATE:
 
 npx hardhat ttt-update-router --blockchain ethereumSepolia --contract 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --router 0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59
 
@@ -49,7 +49,7 @@ npx hardhat ttt-update-router --blockchain polygonAmoy --contract 0x1C929B974B48
 
 
 
-## DEPOSITE NATIVE TOKEN TO SMART CONTRACT
+## E. DEPOSITE NATIVE TOKEN TO SMART CONTRACT
 
 ON SEPOLIA: 0.1 ETH
 
@@ -73,7 +73,7 @@ npx hardhat ttt-get-sessionId --blockchain avalancheFuji --contract 0x5Cb1EFf276
 
 ✅ sessionId at index 0 is: 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69
 
-## NEXT NEW GAME (TEST FOR THE NEW ROUND)
+## F. NEXT NEW GAME (TEST FOR THE NEW ROUND)
 
 ### START GAME BETWEEN FUJI AND SEPOLIA:
 
@@ -83,7 +83,7 @@ npx hardhat ttt-start --source-blockchain avalancheFuji --sender 0x5Cb1EFf276306
 
 https://ccip.chain.link/#/side-drawer/msg/0x5b327dbf28f7f643a40654496a9e2c4e52b5ab5ccb070458713b600040e1ae0f
 
-## PLAYER MAP
+## G. PLAYER MAP
 
 1 (Move 1: 0 - 0) 2 (Move 2: 0 - 1) 2 (Move 8: 0 - 2)
 
@@ -91,7 +91,7 @@ https://ccip.chain.link/#/side-drawer/msg/0x5b327dbf28f7f643a40654496a9e2c4e52b5
 
 1 (Move 9: 2 - 0) 2 (Move 6: 2 - 1) 1 (Move 5: 2 - 2)
 
-## PLAYER MOVE
+## H. PLAYER MOVE
 
 ### Player 2 makes a move in Blockchain 2
 
@@ -160,7 +160,7 @@ npx hardhat ttt-move --x 2 --y 0 --player 1 --session-id 0xef5ae8233001b16f3aef7
 
 https://ccip.chain.link/#/side-drawer/msg/0xf1bc59965f9ea8508876b8f3f9193587a6eccd59acf78c57a40f372c39cf8ee6
 
-### Check the winner
+## I. Check the winner
 
 npx hardhat ttt-check-winner --blockchain ethereumSepolia --contract 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 
 
