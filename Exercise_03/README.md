@@ -77,6 +77,8 @@ npx hardhat ttt-get-sessionId --blockchain avalancheFuji --contract 0x5Cb1EFf276
 
 sessionId at index 0 is: 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69
 
+## PLAY MAP
+
 1 (Move 1: 0 - 0) 2 (Move 2: 0 - 1) 2 (Move 8: 0 - 2)
 
 1 (Move 7: 1 - 0) 1 (Move 3: 1 - 1) 2 (Move 4: 1 - 2)
