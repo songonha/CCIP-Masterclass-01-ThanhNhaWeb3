@@ -77,31 +77,36 @@ npx hardhat ttt-get-sessionId --blockchain avalancheFuji --contract 0x5Cb1EFf276
 
 sessionId at index 0 is: 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69
 
+1 (Move 1: 0 - 0) 2 (Move 2: 0 - 1) 2 (Move 8: 0 - 2)
+
+1 (Move 7: 1 - 0) 1 (Move 3: 1 - 1) 2 (Move 4: 1 - 2)
+
+1 (Move 9: 2 - 0) 2 (Move 6: 2 - 1) 1 (Move 5: 2 - 2)
 
 ### Player 2 makes a move in Blockchain 2
 
-#### Move 2: 
+#### Move 2: 0 1
 npx hardhat ttt-move --x 0 --y 1 --player 2 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain avalancheFuji --sender 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --destination-blockchain ethereumSepolia --receiver 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
 
 ✅ Message sent, you make a move! transaction hash: 0xf338919014fd5b7cf4fd9f73d464ba1992c0dcd04118c31e6181db7ae3cffe50
 
 https://ccip.chain.link/#/side-drawer/msg/0xf67342c1be819e3a87fe590a5a95aee2fbb5f6aec1b0a51a2180b097ebeaab9a
 
-#### Move 4:
+#### Move 4: 1 2
 npx hardhat ttt-move --x 1 --y 2 --player 2 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain avalancheFuji --sender 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --destination-blockchain ethereumSepolia --receiver 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
 
 ✅ Message sent, you make a move! transaction hash: 0xecaf5120332d99d42b63532b03431d122e3e76754ce7daa16d325980a4952a08
 
 https://ccip.chain.link/#/side-drawer/msg/0x0d7fa7a3abf9db4e7e88494b8e224c19411e68af67cd63f3dfe925c9224cf72c
 
-#### Move 6:
+#### Move 6: 2 1
 npx hardhat ttt-move --x 2 --y 1 --player 2 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain avalancheFuji --sender 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --destination-blockchain ethereumSepolia --receiver 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
 
 ✅ Message sent, you make a move! transaction hash: 0x4a16cfea5f1bc3ee6d0528fc07fde3c88ab80c2f39f277989bf3370bd028bbf9
 
 https://ccip.chain.link/#/side-drawer/msg/0x1f145ed932df0df790339a3ebde98a54875c25ea9eef9af18113cddda97ea797
 
-#### Move 8:
+#### Move 8: 0 2
 npx hardhat ttt-move --x 0 --y 2 --player 2 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain avalancheFuji --sender 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87 --destination-blockchain ethereumSepolia --receiver 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1
 
 ✅ Message sent, you make a move! transaction hash: 0x94a96d8f8efb296801b4bff15e4a7f32927eabe05a1c6dc25e992c4eac2a73f8
@@ -110,35 +115,35 @@ https://ccip.chain.link/#/side-drawer/msg/0x15d469fd3d033d3f3f48eaecad04b3c93fd9
 
 ### Player 1 makes a move in Blockchain 1
 
-#### Move 1: 
+#### Move 1: 0 0
 npx hardhat ttt-move --x 0 --y 0 --player 1 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain ethereumSepolia --sender 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --destination-blockchain avalancheFuji --receiver 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87
 
 ✅ Message sent, you make a move! transaction hash: 0xf467b0ad69cde1dba714e0629b490c8bb21f2099416d1b11ad2a9773856747bd
 
 https://ccip.chain.link/#/side-drawer/msg/0x89530fb737ea08c723f2ef0dbfd9c28d8f350bd7c34aecc13c0d1dca23adb163
 
-#### Move 3: 
+#### Move 3: 1 1
 npx hardhat ttt-move --x 1 --y 1 --player 1 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain ethereumSepolia --sender 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --destination-blockchain avalancheFuji --receiver 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87
 
 ✅ Message sent, you make a move! transaction hash: 0x5f3c34b1d2db4d628bfcc19553de97fb325b1f58e927c829b1bebcfdec40676f
 
 https://ccip.chain.link/#/side-drawer/msg/0xb12462796133d739a889de747e00b21998224635447c60dd3c21cf5490bbefdb
 
-#### Move 5: 
+#### Move 5: 2 2
 npx hardhat ttt-move --x 2 --y 2 --player 1 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain ethereumSepolia --sender 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --destination-blockchain avalancheFuji --receiver 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87
 
 ✅ Message sent, you make a move! transaction hash: 0x06b8bcb9f86b7aaa69f2db440279f472a15213863295feb34938310e25056d9f
 
 https://ccip.chain.link/#/side-drawer/msg/0xe8a68d903167912c5c63ddd346630686ddf22f94b76bd4f6f846c9a81cc2a6e7
 
-#### Move 7: 
+#### Move 7: 1 0
 npx hardhat ttt-move --x 1 --y 0 --player 1 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain ethereumSepolia --sender 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --destination-blockchain avalancheFuji --receiver 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87
 
 ✅ Message sent, you make a move! transaction hash: 0xcf0254edf3ca9e7ac0b14e2c14f3db7b9ef8922ed452ee82732bcfee74a7c7b8
 
 https://ccip.chain.link/#/side-drawer/msg/0x46c0eae3e2f1524522bd813ccbdb483930e48f9a0ff4628907bfb9b461320240
 
-#### Move 9: 
+#### Move 9: 2 0
 npx hardhat ttt-move --x 2 --y 0 --player 1 --session-id 0xef5ae8233001b16f3aef789ab070b42cd03528a677501295a6a9b014346f7e69 --source-blockchain ethereumSepolia --sender 0xDA63d08a3c32438d7bA2d762Be124b32B821FCd1 --destination-blockchain avalancheFuji --receiver 0x5Cb1EFf2763065C7a8B0EA3bb45Bf669cBAFdB87
 
 ✅ Message sent, you make a move! transaction hash: 0x5339ae596759fbc3eb639e829c69c8c5e52ef03e28f0f95a3c2f8ed6ab1a0c57
